@@ -1,0 +1,132 @@
+/* Font-familes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Poppins:wght@500&display=swap');
+
+/* Universal Styling */
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #14273d;
+    font-weight: 700;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Be Vietnam Pro';
+    overflow: hidden;
+}
+
+/* Navbar styling */
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(5,400px 1fr 1fr 1fr 1fr);
+    margin-top: 20px;
+    grid-gap: 20px;
+
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+li:nth-child(1){
+    margin-right: 200px;
+}
+li:nth-child(2){
+    margin-left: 340px;
+}
+.nav-link{
+    align-items: center;
+    padding: 10px 20px;
+    padding-top: 5px;
+    border-radius: 50px;
+}
+.nav-link:not(:first-of-type){
+    background-color: #17375b;
+    transition: transform .3s;
+}
+.nav-link:not(:first-of-type):hover{
+    background-color: #4475e2;
+    cursor: pointer;
+    transform: translateY(5px);
+}
+/* Navbar styling ending  */
+
+/* Hero section styling */
+.hero-section{
+    display: grid;
+    grid-template-columns: repeat(2,700px 1fr);
+    align-items: center;
+}
+.hero-section-content{
+    margin-left: 60px;
+    margin-bottom: 100px;
+}
+.hero-section-content h3{
+    margin-top: -35px;
+    color: #4475e2;
+}
+.hero-section-content hr{
+    width: 130px;
+    margin-left: 0px;
+    margin-top: -10px;
+
+}
+.hero-section-content .btn{
+    border: none;
+    outline: none;
+    padding: 15px 45px;
+    background: transparent;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s;
+     
+}
+.hero-section-content .btn:hover{
+    transform: translateY(5px);
+
+}
+.hero-section-content .btn1{
+    background: #17375b;   
+}
+.hero-section-content .btn1:hover{
+    background-color: #4475e2;
+}
+.hero-section-content .btn2{
+    border: 2px solid #4475e2;
+    margin-left: 10px;
+    color: #4475e2;
+}
+.hero-section-content .btn2:hover{
+    background: #4475e2;
+    color: #fff;
+
+}
+
+/* Social media icons styling */
+
+.social-media{
+    transform: translateY(80px) translateX(30px);
+}
+
+.social-media i{
+    font-size: 35px;
+    border: 2px solid #4475e2;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 50%;
+}
+
+.social-media i:hover{
+    background: #4475e2;
+    color: #fff;
+    transform: translateY(5px);
+}
